@@ -1,0 +1,51 @@
+.Fees{
+    height: 18rem;
+    padding: 2rem 0 3.5rem;
+    margin-left: 12%;
+    position: relative;
+    font-weight: 700;
+    .fees-header{
+      font-size: 2rem;
+      margin: 0 0 1.8rem 1rem;
+      &::before{
+        content: "";
+        height: 12px;
+        width: 12px;
+        border: 2px solid $PURPLE_DARK;
+        background-color: $PURPLE_LIGHT;
+        border-radius: 100%;
+        position: absolute;
+        top: 18%;
+        left: -18px;
+        z-index: 4;
+      }
+    }
+    .FeesCard{
+      height: 7.8rem;
+      border-radius: 16px;
+      background-color: rgba($PURPLE_DARK, 0.4);
+      border: 1px solid $PURPLE_DARK;
+      display: flex;
+      align-items: center;
+      padding: 2rem 1rem;
+      margin-right: 4rem;
+      font-family: 'Space Mono';
+      font-weight: 400;
+      .plus-sign, .equal-sign{
+        font-size: 5.8rem;
+      }
+      .FeeBlock{
+        margin: 1.5rem;
+        .block-header{
+          opacity: 0.5;
+          font-size: 1.7rem;
+        }
+        .block-content{
+          font-size: 2.2rem;
+          line-height: 2.6rem;
+          letter-spacing: -0.025em;
+          font-feature-settings: 'pnum' on, 'onum' on;
+        }
+      }
+    }
+  }

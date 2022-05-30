@@ -1,0 +1,128 @@
+@import './Fees.scss';
+@import './Footer.scss';
+
+.CurrencyConverter{
+    background-color: $PURPLE_LIGHT;
+    border-radius: 24px;
+    box-shadow: 0px 4px 31px 25px rgba(0, 0, 0, 0.03);
+    color: #FFFFFF;
+    font-family: 'Space Mono';
+  
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 12rem;
+    position: relative;
+    width: 67%;
+    .header{  
+      font-size: 2.7rem;
+      font-weight: bold;
+      margin: 3.5rem 4rem;
+      height: 4rem;
+      text-align: center;
+    }
+  }
+    
+  .Card{
+    border-radius: 16px;
+    background-color: $PURPLE_DARK;
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 1.8rem;
+    margin: 0 5%;
+    z-index: 3;
+    .CardHeader{
+      height: 50%;
+      font-size: 1.8rem;
+    }
+    .CardContent{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 50%;
+      z-index: 3;
+      
+      .Amount{
+        background: transparent;
+        border: none;
+        color: inherit;
+        font-size: 4rem;
+        font-weight: 700;
+        font-family: 'Courier Prime';
+        min-width: 0;
+        padding-top: 7px;
+        &:focus{
+          outline: none;
+        }
+      }
+  
+      .CurrencySelect{
+        font-family: 'Space Mono';
+        color: inherit;
+        font-size: 3.4rem;
+        font-weight: 700;
+        letter-spacing: -0.035em;
+        font-feature-settings: 'pnum' on, 'onum' on;
+        display: flex;
+        align-items: center;
+        position: relative;
+        min-width: fit-content;
+        .currency-icon{
+          border-radius: 100%;
+          margin: 0 2rem;
+          display: flex;
+          img{
+            width: 3.8rem;
+            height: 3.8rem;
+            border-radius: 100%;
+          }
+          .flag-img{
+            object-fit: cover;
+            object-position: -9px 0px;
+          }
+        }
+        .cur-select-logo{
+          border-radius: 100%;
+          margin: 0 2rem;
+          width: 5rem;
+          height: 5rem;
+          background-color: $PURPLE_LIGHT_LOGO_BCKGR;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        } 
+      }
+    }
+    &.Pay::after{
+      content: "";
+      position: absolute;
+      border: 1px solid hsla(240, 19%, 25%, 1);
+      height: 40%;
+      top: 230px;
+      left: 90px;
+    }
+  }
+
+  .Button{     
+    background-color: $PURPLE_BRIGHT;
+    border-radius: 1rem;
+    height: 6rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 30px;
+    margin: 0 4rem 3.4rem;
+  }
+  
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+      display: none; 
+      -webkit-appearance: none;
+      margin: 0; 
+  }
+  input[type=number] {
+      -moz-appearance: textfield;
+  }
+  

@@ -1,0 +1,22 @@
+.Footer{
+    display: flex;
+    align-items: center;
+    margin: 3.5rem 4rem;
+    justify-content: space-between;
+    .QR_Block, .Time_Block{
+        display: flex;
+        align-items: center;
+        margin: 0 1.5rem;
+        font-size: 1.4rem;
+        line-height: 20.38px;
+        img{
+            margin-right: 0.6rem;
+        }
+        .block-header{
+            font-family: 'Alatsi';
+            font-size: 1.6rem;
+            line-height: 22.8px;
+            letter-spacing: -2.5%;
+        }
+    }
+}

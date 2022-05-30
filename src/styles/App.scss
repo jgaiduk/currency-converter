@@ -1,0 +1,30 @@
+@import './fonts.scss';
+@import './palette.scss';
+@import './CurrencyConverter.scss';
+
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; 
+}
+
+
+body {
+  box-sizing: border-box;
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(#424265 0, #39394E 100%, #1F1F3C 100%);
+}
+

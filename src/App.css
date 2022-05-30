@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&family=Space+Mono:wght@700&display=swap');
+
+html, body, #root{
+  height: 100%;
+}
+
+.App {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(52.27% 52.27% at 49.36% 50%, #424265 0%, #39394E 100%, #1F1F3C 100%);
+}
+
+.container{
+  width: 705px;
+  height: 820px;
+  background-color: #474767;
+  border-radius: 24px;
+  box-shadow: 0px 4px 31px 25px rgba(0, 0, 0, 0.03);
+  color: #FFFFFF;
+  font-family: 'Space Mono', monospace;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.header{
+  font-family: Space Mono;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.Card{
+  height: 151px;
+  width: 623px;
+  border-radius: 16px;
+  background-color: hsla(240, 19%, 25%, 1);
+  display: flex;
+  flex-direction: column;
+  padding: 30px 18px;
+}
+
+.CardHeader{
+  height: 50%;
+  font-size: 18px;
+}
+
+.CardContent{
+  display: flex;
+  justify-content: space-between;
+  height: 50%;
+}
+
+.Amount{
+  background: transparent;
+  border: none;
+  color: inherit;
+  font-size: 40px;
+  font-family: 'Courier Prime', monospace;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    display: none; 
+    -webkit-appearance: none;
+    margin: 0; 
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+input:focus{
+  border: none;
+}
